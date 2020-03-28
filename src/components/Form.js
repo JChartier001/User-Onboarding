@@ -30,13 +30,13 @@ const OnboardingForm = ({values, touched, errors, status}) => {
                 <button type="submit">Submit</button>
             </Form>   
                     <div className='userInfo'>
-            {user.map(user =>(
+            {user && user.length > 0 ? user.map(user =>(
                 <div key={user.id}>
                     <p>{user.name}</p>
                     <p>{user.email}</p>
                     <p>{user.password}</p>
                 </div>                
-            ))} 
+            )): null} 
             </div>        
          </div>   
     );
