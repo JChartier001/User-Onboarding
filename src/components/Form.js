@@ -35,6 +35,7 @@ const OnboardingForm = ({values, touched, errors, status}) => {
                     <p>{user.name}</p>
                     <p>{user.email}</p>
                     <p>{user.password}</p>
+                    <p>{user.terms}</p>
                 </div>                
             )): null} 
             </div>        
