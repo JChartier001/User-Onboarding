@@ -29,9 +29,9 @@ const OnboardingForm = ({values, touched, errors, status}) => {
                 {errors.terms && <p className='error'>{errors.terms}</p>}
                 <button type="submit">Submit</button>
             </Form>   
-                    <div className='userInfo'>
+                    <div >
             {user && user.length > 0 ? user.map(user =>(
-                <div key={user.id}>
+                <div className='userInfo' key={user.id}>
                     <p>{user.name}</p>
                     <p>{user.email}</p>
                     <p>{user.password}</p>
